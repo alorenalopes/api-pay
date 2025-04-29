@@ -1,0 +1,27 @@
+{
+  "name": "api-pay",
+  "version": "1.0.0",
+  "description": "Serviço de API de pagamentos",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "concurrently \"npm run backend\" \"npm run mock\"",
+    "backend": "cd backend && cross-env PORT=3001 node src/index.js",
+    "mock": "cd mock-providers && cross-env PORT=3000 node src/index.js"
+  },
+  "keywords": [
+    "api",
+    "payment",
+    "express"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.0.0",
+    "dotenv": "^16.5.0",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.22"
+  }
+}
