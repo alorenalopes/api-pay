@@ -1,4 +1,4 @@
-const MemoryStore = require('../models/providerTwoMemoryStore');
+const MemoryStore = require('../repositories/providerTwoMemoryRepository');
 
 /** Create a new transaction */
 const createTransaction = (transactionData) => {

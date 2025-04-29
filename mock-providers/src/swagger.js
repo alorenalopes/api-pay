@@ -35,7 +35,7 @@ const options = {
                         content: {
                             'application/json': {
                                 schema: {
-                                    $ref: '#/components/schemas/ProviderOneChargeRequest'
+                                    $ref: '#/components/validations/ProviderOneChargeRequest'
                                 }
                             }
                         }
@@ -46,7 +46,7 @@ const options = {
                             content: {
                                 'application/json': {
                                     schema: {
-                                        $ref: '#/components/schemas/ProviderOneChargeResponse'
+                                        $ref: '#/components/validations/ProviderOneChargeResponse'
                                     }
                                 }
                             }
@@ -82,7 +82,7 @@ const options = {
                             content: {
                                 'application/json': {
                                     schema: {
-                                        $ref: '#/components/schemas/ProviderOneChargeResponse'
+                                        $ref: '#/components/validations/ProviderOneChargeResponse'
                                     }
                                 }
                             }
@@ -131,7 +131,7 @@ const options = {
                             content: {
                                 'application/json': {
                                     schema: {
-                                        $ref: '#/components/schemas/ProviderOneChargeResponse'
+                                        $ref: '#/components/validations/ProviderOneChargeResponse'
                                     }
                                 }
                             }
@@ -155,7 +155,7 @@ const options = {
                         content: {
                             'application/json': {
                                 schema: {
-                                    $ref: '#/components/schemas/ProviderTwoTransactionRequest'
+                                    $ref: '#/components/validations/ProviderTwoTransactionRequest'
                                 }
                             }
                         }
@@ -166,7 +166,7 @@ const options = {
                             content: {
                                 'application/json': {
                                     schema: {
-                                        $ref: '#/components/schemas/ProviderTwoTransactionResponse'
+                                        $ref: '#/components/validations/ProviderTwoTransactionResponse'
                                     }
                                 }
                             }
@@ -202,7 +202,7 @@ const options = {
                             content: {
                                 'application/json': {
                                     schema: {
-                                        $ref: '#/components/schemas/ProviderTwoTransactionResponse'
+                                        $ref: '#/components/validations/ProviderTwoTransactionResponse'
                                     }
                                 }
                             }
@@ -251,7 +251,7 @@ const options = {
                             content: {
                                 'application/json': {
                                     schema: {
-                                        $ref: '#/components/schemas/ProviderTwoTransactionResponse'
+                                        $ref: '#/components/validations/ProviderTwoTransactionResponse'
                                     }
                                 }
                             }

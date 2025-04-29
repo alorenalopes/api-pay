@@ -31,7 +31,7 @@ const options = {
                         content: {
                             'application/json': {
                                 schema: {
-                                    $ref: '#/components/schemas/PaymentRequest'
+                                    $ref: '#/components/validations/PaymentRequest'
                                 }
                             }
                         }
@@ -42,7 +42,7 @@ const options = {
                             content: {
                                 'application/json': {
                                     schema: {
-                                        $ref: '#/components/schemas/PaymentResponse'
+                                        $ref: '#/components/validations/PaymentResponse'
                                     }
                                 }
                             }
@@ -52,7 +52,7 @@ const options = {
                             content: {
                                 'application/json': {
                                     schema: {
-                                        $ref: '#/components/schemas/Error'
+                                        $ref: '#/components/validations/Error'
                                     }
                                 }
                             }
@@ -62,7 +62,7 @@ const options = {
                             content: {
                                 'application/json': {
                                     schema: {
-                                        $ref: '#/components/schemas/Error'
+                                        $ref: '#/components/validations/Error'
                                     }
                                 }
                             }
@@ -92,7 +92,7 @@ const options = {
                             content: {
                                 'application/json': {
                                     schema: {
-                                        $ref: '#/components/schemas/PaymentResponse'
+                                        $ref: '#/components/validations/PaymentResponse'
                                     }
                                 }
                             }
@@ -102,7 +102,7 @@ const options = {
                             content: {
                                 'application/json': {
                                     schema: {
-                                        $ref: '#/components/schemas/Error'
+                                        $ref: '#/components/validations/Error'
                                     }
                                 }
                             }
@@ -112,7 +112,7 @@ const options = {
                             content: {
                                 'application/json': {
                                     schema: {
-                                        $ref: '#/components/schemas/Error'
+                                        $ref: '#/components/validations/Error'
                                     }
                                 }
                             }
@@ -122,7 +122,7 @@ const options = {
                             content: {
                                 'application/json': {
                                     schema: {
-                                        $ref: '#/components/schemas/Error'
+                                        $ref: '#/components/validations/Error'
                                     }
                                 }
                             }
@@ -168,7 +168,7 @@ const options = {
                             content: {
                                 'application/json': {
                                     schema: {
-                                        $ref: '#/components/schemas/PaymentResponse'
+                                        $ref: '#/components/validations/PaymentResponse'
                                     }
                                 }
                             }
@@ -178,7 +178,7 @@ const options = {
                             content: {
                                 'application/json': {
                                     schema: {
-                                        $ref: '#/components/schemas/Error'
+                                        $ref: '#/components/validations/Error'
                                     }
                                 }
                             }
@@ -188,7 +188,7 @@ const options = {
                             content: {
                                 'application/json': {
                                     schema: {
-                                        $ref: '#/components/schemas/Error'
+                                        $ref: '#/components/validations/Error'
                                     }
                                 }
                             }

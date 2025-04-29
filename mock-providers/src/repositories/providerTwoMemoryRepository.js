@@ -1,4 +1,4 @@
-const {createResponse} = require('../factories/paymentFactories');
+const {createResponse} = require('../utils/paymentAdapter');
 const {v4: uuidv4} = require('uuid');
 const PaymentConstants = require('../constants/paymentConstants');
 

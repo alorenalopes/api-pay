@@ -1,5 +1,5 @@
 const providerOneService = require('../services/providerOneService');
-const ValidationSchemas = require('../schemas/validationSchemas');
+const ValidationSchemas = require('../validations/validationSchemas');
 const {STATUS} = require('../constants/statusConstants');
 
 /** Process a new charge */

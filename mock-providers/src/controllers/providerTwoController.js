@@ -1,5 +1,5 @@
 const providerTwoService = require('../services/providerTwoService');
-const ValidationSchemas = require('../schemas/validationSchemas');
+const ValidationSchemas = require('../validations/validationSchemas');
 const {STATUS} = require('../constants/statusConstants');
 
 /**

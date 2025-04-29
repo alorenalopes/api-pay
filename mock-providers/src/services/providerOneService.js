@@ -1,4 +1,4 @@
-const MemoryStore = require('../models/providerOneMemoryStore');
+const MemoryStore = require('../repositories/providerOneMemoryRepository');
 
 /** Create a new charge */
 const createCharge = (chargeData) => {

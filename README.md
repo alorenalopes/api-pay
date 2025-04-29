@@ -39,6 +39,16 @@ npm run start
 - Documentação da API (Backend): http://localhost:3001/api-docs
 - Documentação da API (Mock-Providers): http://localhost:3000/api-docs
 
+### Executando os testes
+
+Para executar os testes unitários:
+
+```bash
+
+cd backend
+npm run test
+```
+
 ## Como testar pagamentos
 
 Para testar a API, use cartões com os seguintes padrões:
@@ -52,6 +62,44 @@ Para testar a API, use cartões com os seguintes padrões:
 - Fallback automático: Se um provedor falhar, outro será tentado na sequência.
 - Armazenamento temporário: As transações ficam salvas na memória enquanto o sistema está rodando.
 - Formato único: Um só formato de comunicação, independentemente do provedor usado.
+
+```plaintext
+┌────────────────────────────────────┐
+│ Início: Requisição de Pagamento    │
+└────────────────────────────────────┘
+                 │
+                 ▼
+┌────────────────────────────────────┐
+│ Provedor 1                         │
+└────────────────────────────────────┘
+                 │
+         ┌───────┴────────┐
+         │                │
+      Sucesso           Falha
+         │                │
+         ▼                ▼
+┌────────────────┐   ┌────────────────────────────────────┐
+│ Pagamento      │   │ Transforma body para formato       │
+│ Aprovado       │   │ compatível com Provedor 2          │
+└────────────────┘   └────────────────────────────────────┘
+                           │
+                           ▼
+             ┌─────────────────────────────┐
+             │Provedor 2                   │
+             └─────────────────────────────┘
+                           │
+                  ┌────────┴────────┐
+                  │                 │
+               Sucesso           Falha
+                  │                 │
+                  ▼                 ▼
+        ┌────────────────┐ ┌────────────────────┐
+        │ Pagamento      │ │ Pagamento Recusado │
+        │ Aprovado       │ └────────────────────┘
+        └────────────────┘
+```
+
+
 
 ## Tecnologias usadas
 
